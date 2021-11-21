@@ -59,7 +59,7 @@ class MainAdapter(internal var movieList: List<Movie>, internal var context: Con
     holder.titleTextView.text = movieList[position].title
     holder.releaseDateTextView.text = movieList[position].releaseDate
     if (movieList[position].posterPath.equals("")) {
-      holder.movieImageView.setImageDrawable(context.getDrawable(R.drawable.ic_local_movies_gray))
+      holder.movieImageView.setImageDrawable(context.resources.getDrawable(R.drawable.ic_local_movies_gray))
     } else {
       Picasso.get().load(RetrofitClient.TMDB_IMAGEURL + movieList[position].posterPath).into(holder.movieImageView)
     }
