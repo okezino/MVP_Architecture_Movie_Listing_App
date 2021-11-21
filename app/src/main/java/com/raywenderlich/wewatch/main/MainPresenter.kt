@@ -47,8 +47,7 @@ class MainPresenter(private val viewInterface : MainContract.ViewInterface,
         .subscribeOn(Schedulers.io())
         .observeOn(AndroidSchedulers.mainThread())
         .subscribeWith(observer)
-
-    compositeDisposable.add(myMoviesDisposable)
+        compositeDisposable.add(myMoviesDisposable)
     }
 
     override fun stop() {

@@ -62,10 +62,7 @@ class MainActivity : AppCompatActivity() , MainContract.ViewInterface {
   private lateinit var adapter: MainAdapter
   private lateinit var fab: FloatingActionButton
   private lateinit var noMoviesLayout: LinearLayout
-  private lateinit var mainPresenter: MainContract.PresenterInterface
-
-  private lateinit var dataSource: LocalDataSource
-  private val compositeDisposable = CompositeDisposable()
+  private lateinit var mainPresenter: MainPresenter
 
   private val TAG = "MainActivity"
 

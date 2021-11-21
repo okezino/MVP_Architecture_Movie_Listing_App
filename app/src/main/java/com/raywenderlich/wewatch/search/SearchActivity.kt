@@ -60,7 +60,7 @@ class SearchActivity : AppCompatActivity(), SearchContract.ViewInterface {
   private lateinit var noMoviesTextView: TextView
   private lateinit var progressBar: ProgressBar
   private lateinit var query: String
-  private lateinit var searchPresenter: SearchContract.PresenterInterface
+  private lateinit var searchPresenter: SearchPresenter
 
 
   override fun onCreate(savedInstanceState: Bundle?) {

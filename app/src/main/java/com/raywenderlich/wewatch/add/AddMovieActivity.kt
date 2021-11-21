@@ -51,8 +51,7 @@ open class AddMovieActivity : AppCompatActivity(), AddMovieContract.ViewInterfac
     private lateinit var titleEditText: EditText
     private lateinit var releaseDateEditText: EditText
     private lateinit var movieImageView: ImageView
-    private lateinit var dataSource: LocalDataSource
-    private lateinit var addPresenter: AddMovieContract.PresenterInterface
+    private lateinit var addPresenter: AddMoviePresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
